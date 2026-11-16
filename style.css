@@ -100,6 +100,7 @@ dialog .close{position:absolute;right:8px;top:7px;width:30px;height:30px;border:
 .card.wide .cover img{height:100%;object-fit:cover;object-position:center}
 .card.wide figcaption{display:flex;flex-direction:column;justify-content:center;padding:22px 24px}
 .card:not([data-video]){cursor:default}
+.card.wide[data-video]{cursor:pointer}
 
 /* 其他开源项目 */
 .mini{margin-top:30px;border-top:1px solid var(--line);padding-top:16px}
