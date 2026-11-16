@@ -27,7 +27,7 @@ a:hover{text-decoration:underline}
 .meta{list-style:none;margin:18px 0 26px;padding:0;display:flex;flex-direction:column;gap:9px;font-size:13px}
 .meta li{display:flex;gap:8px;align-items:flex-start;color:var(--muted);line-height:1.5}
 .meta svg{width:14px;height:14px;fill:currentColor;flex:none;margin-top:3px;opacity:.6}
-.meta a{color:var(--muted);word-break:break-all}
+.meta a{display:flex;gap:8px;align-items:flex-start;color:var(--muted);word-break:break-all}
 .meta a:hover{color:var(--accent)}
 .side-h{font-size:11.5px;letter-spacing:1.4px;color:#8a877c;font-weight:600;margin:0 0 10px}
 .chips{list-style:none;margin:0;padding:0;display:flex;flex-wrap:wrap;gap:6px}
@@ -95,7 +95,7 @@ dialog .close{position:absolute;right:8px;top:7px;width:30px;height:30px;border:
 }
 
 /* 整宽项目卡（带界面截图） */
-.card.wide{grid-column:1/-1;display:grid;grid-template-columns:1.25fr 1fr;align-items:stretch;cursor:default}
+.card.wide{grid-column:1/-1;display:grid;grid-template-columns:1.35fr 1fr;align-items:stretch;cursor:default}
 .card.wide .cover{aspect-ratio:auto;min-height:236px;height:100%}
 .card.wide .cover img{height:100%;object-fit:cover;object-position:center}
 .card.wide figcaption{display:flex;flex-direction:column;justify-content:center;padding:22px 24px}
@@ -125,9 +125,8 @@ dialog .close{position:absolute;right:8px;top:7px;width:30px;height:30px;border:
 .card.wide.light .cover img{object-fit:contain}
 .card[data-image]{cursor:zoom-in}
 
-/* OpenDRIVE 卡：截图信息密度高，图区放宽、底色压深 */
-.card.wide.map{grid-template-columns:1.9fr 1fr}
-.card.wide.map .cover{min-height:300px;background:#0c0e14}
+/* OpenDRIVE 卡：与其余通栏卡保持同列宽对齐 */
+.card.wide.map .cover{min-height:260px;background:#0c0e14}
 @media(max-width:900px){
   .card.wide.map{grid-template-columns:1fr}
   .card.wide.map .cover{min-height:0;aspect-ratio:16/10}
