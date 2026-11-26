@@ -124,6 +124,7 @@ dialog .close{position:absolute;right:8px;top:7px;width:30px;height:30px;border:
 .card.wide.light .cover{background:#f4f5f7}
 .card.wide.light .cover img{object-fit:contain}
 .card[data-image]{cursor:zoom-in}
+.card.wide[data-video]{cursor:pointer}
 
 /* OpenDRIVE 卡：与其余通栏卡保持同列宽对齐 */
 .card.wide.map .cover{min-height:260px;background:#0c0e14}
